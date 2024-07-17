@@ -2,7 +2,7 @@ import { PATH_DB } from '../constants/contacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
 import fs from 'fs/promises';
 
-const generateContacts = async (number) => {
+export const generateContacts = async (number) => {
   try {
     const newContactsPush = [];
     for (let i = 0; i < number; i++) {
